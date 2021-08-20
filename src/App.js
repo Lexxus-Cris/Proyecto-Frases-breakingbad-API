@@ -1,8 +1,16 @@
+import { Button, Container } from "./styles";
 
 function App() {
+
+  const consultarApi = () => {
+    console.log('consultando');
+  }
   return (
-    <div className="App">
-    </div>
+    <Container>
+      <Button
+        onClick={consultarApi}
+      >Obtener frase</Button>
+    </Container>
   );
 }
 
