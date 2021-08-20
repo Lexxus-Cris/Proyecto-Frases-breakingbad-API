@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Frase from './components/Frase';
 
@@ -18,6 +18,12 @@ function App() {
         console.log(error);
       }
     }
+
+    //Cargar ina frase
+    useEffect(() => {
+      consultarApi()
+    }, [])
+    
   return(
     <Container>
       <Frase
