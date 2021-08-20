@@ -1,13 +1,15 @@
 import React from 'react'
 
+import { PhraseContainer } from './styles';
+
 const Frase = ({frase}) => {
    const { quote, author } = frase;
 
    return (
-      <div>
-         <h2>{quote}</h2>
+      <PhraseContainer>
+         <h1>{quote}</h1>
          <p>- {author}</p>
-      </div>
+      </PhraseContainer>
    )
 }
 
